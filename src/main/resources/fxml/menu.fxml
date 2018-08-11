@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<HBox xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ru.aizen.app.controller.MenuController">
+    <MenuBar HBox.hgrow="ALWAYS">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" text="New" onAction="#onClickNew"/>
+            <MenuItem mnemonicParsing="false" text="Open" onAction="#onClickOpen"/>
+            <MenuItem mnemonicParsing="false" text="Save" onAction="#onClickSave"/>
+            <MenuItem mnemonicParsing="false" text="Save as" onAction="#onClickSaveAs"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem mnemonicParsing="false" text="Import from *.hml" onAction="#onClickImportHml"/>
+            <MenuItem mnemonicParsing="false" text="Import from *.hmp" onAction="#onClickImportHmp"/>
+            <MenuItem mnemonicParsing="false" text="Export to *.hml" onAction="#onClickExportHml"/>
+            <MenuItem mnemonicParsing="false" text="Export to *.hmp" onAction="#onClickExportHmp"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem mnemonicParsing="false" text="Quit" onAction="#onClickQuit"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+            <MenuItem mnemonicParsing="false" text="Undo"/>
+            <MenuItem mnemonicParsing="false" text="Redo"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem mnemonicParsing="false" text="Delete"/>
+            <MenuItem mnemonicParsing="false" text="Copy"/>
+            <MenuItem mnemonicParsing="false" text="Paste"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Mode">
+            <RadioMenuItem mnemonicParsing="false" text="Tile Editor"/>
+            <RadioMenuItem mnemonicParsing="false" text="Graph Editor"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Brushes">
+            <RadioMenuItem mnemonicParsing="false" text="Size 1"/>
+            <RadioMenuItem mnemonicParsing="false" text="Size 3"/>
+            <RadioMenuItem mnemonicParsing="false" text="Size 3"/>
+            <RadioMenuItem mnemonicParsing="false" text="Size 5"/>
+            <RadioMenuItem mnemonicParsing="false" text="Size 9"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <RadioMenuItem mnemonicParsing="false" text="Brush Tile"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Options"/>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" text="FAQ"/>
+            <MenuItem mnemonicParsing="false" text="About"/>
+            <MenuItem mnemonicParsing="false" text="Hopmon.online"/>
+        </Menu>
+    </MenuBar>
+</HBox>
