@@ -5,19 +5,7 @@
 <HBox xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="ru.aizen.app.controller.MenuController">
     <MenuBar HBox.hgrow="ALWAYS">
-        <Menu mnemonicParsing="false" text="File">
-            <MenuItem mnemonicParsing="false" text="New" onAction="#onClickNew"/>
-            <MenuItem mnemonicParsing="false" text="Open" onAction="#onClickOpen"/>
-            <MenuItem mnemonicParsing="false" text="Save" onAction="#onClickSave"/>
-            <MenuItem mnemonicParsing="false" text="Save as" onAction="#onClickSaveAs"/>
-            <SeparatorMenuItem mnemonicParsing="false"/>
-            <MenuItem mnemonicParsing="false" text="Import from *.hml" onAction="#onClickImportHml"/>
-            <MenuItem mnemonicParsing="false" text="Import from *.hmp" onAction="#onClickImportHmp"/>
-            <MenuItem mnemonicParsing="false" text="Export to *.hml" onAction="#onClickExportHml"/>
-            <MenuItem mnemonicParsing="false" text="Export to *.hmp" onAction="#onClickExportHmp"/>
-            <SeparatorMenuItem mnemonicParsing="false"/>
-            <MenuItem mnemonicParsing="false" text="Quit" onAction="#onClickQuit"/>
-        </Menu>
+        <fx:include source="fileMenu.fxml"/>
         <Menu mnemonicParsing="false" text="Edit">
             <MenuItem mnemonicParsing="false" text="Undo"/>
             <MenuItem mnemonicParsing="false" text="Redo"/>

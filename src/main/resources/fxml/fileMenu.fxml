@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<Menu xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ru.aizen.app.controller.FileMenuController"
+      text="File">
+    <MenuItem mnemonicParsing="false" text="New" onAction="#onClickNew"/>
+    <MenuItem mnemonicParsing="false" text="Open" onAction="#onClickOpen"/>
+    <MenuItem mnemonicParsing="false" text="Save" onAction="#onClickSave"/>
+    <MenuItem mnemonicParsing="false" text="Save as" onAction="#onClickSaveAs"/>
+    <SeparatorMenuItem mnemonicParsing="false"/>
+    <MenuItem mnemonicParsing="false" text="Import from *.hml" onAction="#onClickImportHml"/>
+    <MenuItem mnemonicParsing="false" text="Import from *.hmp" onAction="#onClickImportHmp"/>
+    <MenuItem mnemonicParsing="false" text="Export to *.hml" onAction="#onClickExportHml"/>
+    <MenuItem mnemonicParsing="false" text="Export to *.hmp" onAction="#onClickExportHmp"/>
+    <SeparatorMenuItem mnemonicParsing="false"/>
+    <MenuItem mnemonicParsing="false" text="Quit" onAction="#onClickQuit"/>
+</Menu>
