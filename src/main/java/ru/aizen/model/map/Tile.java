@@ -11,4 +11,18 @@ public class Tile {
         this.position = position;
         this.rotation = rotation;
     }
+
+    public static Tile empty(Position position) {
+        return new Tile("empty", position, Rotation.EAST);
+    }
+
+    @Override
+    public String toString() {
+        return "Tile{" +
+                "name='" + name + '\'' +
+                ", position=" + position +
+                ", rotation=" + rotation +
+                ", world=" + world +
+                '}';
+    }
 }

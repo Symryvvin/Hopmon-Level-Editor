@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.Pane?>
-<Pane fx:id="map" xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="ru.aizen.app.controller.MapController">
+<?import javafx.scene.layout.GridPane?>
+<GridPane fx:id="map" xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="ru.aizen.app.controller.MapController">
 
-</Pane>
+</GridPane>
