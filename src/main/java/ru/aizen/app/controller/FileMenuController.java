@@ -4,6 +4,7 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import ru.aizen.app.config.AppConfig;
 import ru.aizen.model.Extension;
 import ru.aizen.model.FileChooserBuilder;
 
@@ -12,9 +13,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 
 public class FileMenuController {
-    private static final String WORK_FOLDER = "/";
-    private static final String LEVEL_FOLDER = "/";
-    private static final String LEVEL_PACK_FOLDER = "/";
+    private static final String WORK_FOLDER = ".";
+    private static final String LEVEL_FOLDER = AppConfig.getGamePath() + "/Data/Levels";
+    private static final String LEVEL_PACK_FOLDER = LEVEL_FOLDER + "/Packs";
     private FileChooser workFileChooser;
     private FileChooser hmlFileChooser;
     private FileChooser hmpFileChooser;

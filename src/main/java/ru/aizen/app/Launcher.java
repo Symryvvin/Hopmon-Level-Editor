@@ -9,10 +9,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.util.Callback;
+import ru.aizen.app.config.AppConfig;
+
+import java.io.IOException;
 
 public class Launcher extends Application {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        AppConfig.config();
         launch(args);
     }
 
